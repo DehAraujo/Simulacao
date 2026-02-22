@@ -65,8 +65,6 @@ Este repositório contém exercícios práticos desenvolvidos com foco em boas p
 
 ---
 
----
-
 ## 📂 Exercícios
 
 | Exercício | Tema | Status |
