@@ -109,7 +109,12 @@ python -m pytest -v
 
 🚀 Autor
 
-Deise Adriana Silva Araújo
+Deise Adriana Silva Araújo<br>
 Ciência da Computação – FEI
 
 ---
+
+## 🤝 Contribuições
+
+Sugestões, melhorias e feedbacks são sempre bem-vindos!  
+Sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
