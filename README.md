@@ -1,12 +1,5 @@
 # 📚 Simulação e Teste de Software (CC8550)
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Pytest](https://img.shields.io/badge/Tests-pytest-green?logo=pytest)
-![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
-![Semester](https://img.shields.io/badge/Semester-1º%202026-blue)
-![Institution](https://img.shields.io/badge/FEI-Ciência%20da%20Computação-red)
-[![Wiki](https://img.shields.io/badge/Wiki-Documentação-blue)](https://github.com/DehAraujo/Simulacao/wiki)
-
 ---
 
 ## 🎓 Informações Acadêmicas
@@ -18,6 +11,21 @@
 - **Semestre:** 1º Semestre de 2026  
 
 ---
+
+## 📘 Documentação (Wiki)
+
+A documentação detalhada do projeto está disponível na Wiki do repositório:
+
+🔗 **Acesse aqui:**  
+
+[![Wiki](https://img.shields.io/badge/Wiki-Documentação-blue)](https://github.com/DehAraujo/Simulacao/wiki)
+
+Na Wiki você encontrará:
+
+- 📄 Descrição detalhada dos exercícios
+- 🧠 Explicação das técnicas aplicadas
+- 📊 Conceitos teóricos complementares
+- 🧪 Estratégias de teste utilizadas
 
 ## 📖 Sobre a Disciplina
 
