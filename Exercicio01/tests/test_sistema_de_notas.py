@@ -1,5 +1,5 @@
 from typing import Literal
-from src.sistema_de_notas import validar_nota, calcular_media, obter_situacao,calcular_estatisticas, normalizar_notas
+from Exercicio01.src.sistema_de_notas import validar_nota, calcular_media, obter_situacao,calcular_estatisticas, normalizar_notas
 import pytest
 
 # Teste notas válidas

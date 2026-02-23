@@ -1,5 +1,5 @@
 import pytest
-from src.cpf import validar_cpf, formatar_cpf
+from Exercicio02.src.cpf import validar_cpf, formatar_cpf
 
 #Teste fixture cpfs válidos
 def test_validar_cpfs_validos(cpfs_validos):
