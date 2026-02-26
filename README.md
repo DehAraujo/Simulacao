@@ -61,7 +61,7 @@ Este repositório contém exercícios práticos desenvolvidos com foco em boas p
 
 ## 📂 Estrutura do Projeto
 
-<img width="786" height="324" alt="image" src="https://github.com/user-attachments/assets/0c326090-315c-46f8-8290-8844de3e0a97" />
+<img width="779" height="375" alt="image" src="https://github.com/user-attachments/assets/b58564b0-47a7-4c1d-9eb2-b12d08f0e5a0" />
 
 ---
 
@@ -71,7 +71,7 @@ Este repositório contém exercícios práticos desenvolvidos com foco em boas p
 |-----------|------|--------|
 | 01 | Sistema de Notas – Testes Funcionais e de Exceção | ✅ Concluído |
 | 02 | Validação de CPF (Dígitos Verificadores, Parametrização e Testes de Exceção) | ✅ Concluído |
-
+| 03 | Sistema de Cálculo de Frete (Particionamento, Valor Limite e Tabela de Decisão) | ✅ Concluído |
 ---
 
 ## 🧪 Tecnologias Utilizadas
