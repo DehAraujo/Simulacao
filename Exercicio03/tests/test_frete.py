@@ -1,12 +1,12 @@
 import pytest
-from src.frete import calcular_frete
+from Exercicio03.src.frete import calcular_frete
 from hypothesis import given
 import hypothesis.strategies as st
 
 #Teste classe de equivalência dados válidos
 @pytest.mark.parametrize("peso, destino, valor_pedido, frete_esperado",
 [
-    #peso <= 1 
+    #peso <= 1
     (1, "mesma_regiao", 50.0, 10.0),
     (1, "outra_regiao", 100, 15.0),
     (1, "internacional", 205, 0.0),
@@ -60,7 +60,13 @@ def test_calcular_frete_valores_limite(peso, destino, valor_pedido, frete_espera
     else:
         assert calcular_frete(peso, destino, valor_pedido) == frete_esperado
 
+#testes com  fixtures
+def test_casos_validos(casos_validos):
+    for peso, destino, valor, esperado in casos_validos:
+        assert calcular_frete(peso, destino, valor) == esperado
+
 #test e com hypothesis
+#frete nunca negativo
 @given(
     peso=st.floats(min_value=0.1, max_value= 20.0),
     destino=st.sampled_from(["mesma_regiao", "outra_regiao", "internacional"]),
@@ -68,4 +74,25 @@ def test_calcular_frete_valores_limite(peso, destino, valor_pedido, frete_espera
 )
 def test_frete_nunca_negativo(peso, destino, valor_pedido):
     frete = calcular_frete(peso, destino, valor_pedido)
-    assert frete >= 0
+    assert frete >= 0.0
+
+#frete com pedidos acima de 200.00, sempre retorna 0.0
+@given(
+    peso=st.floats(min_value=0.1, max_value= 20.0),
+    destino=st.sampled_from(["mesma_regiao", "outra_regiao", "internacional"]),
+    valor_pedido=st.floats(min_value=200.1, max_value=5000.00),
+)
+def test_frete_pedidos_acima_200(peso, destino, valor_pedido):
+    frete = calcular_frete(peso, destino, valor_pedido)
+    assert frete == 0.0
+
+#teste com destino outra região >= frete mesma região para os mesmos peso e valor
+@given(
+    peso=st.floats(min_value=0.1, max_value= 20.0),
+    destino=st.sampled_from(["mesma_regiao", "outra_regiao", "internacional"]),
+    valor_pedido=st.floats(min_value=200.1, max_value=5000.00),
+)
+def test_outra_regiao_maior(peso, destino, valor_pedido):
+    frete_mesma = calcular_frete(peso, "mesma_regiao", valor_pedido)
+    frete_outra = calcular_frete(peso, "outra_regiao", valor_pedido)
+    assert frete_outra >= frete_mesma
