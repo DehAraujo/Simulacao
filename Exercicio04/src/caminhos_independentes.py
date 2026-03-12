@@ -7,4 +7,9 @@ def verificar(n):
     elif n < 0:
         return "Negativo"
     else:
+<<<<<<< HEAD
         return "Zero"
+=======
+        return "Zero"
+
+>>>>>>> 6ac98827f8ff4e5a658841ee91c0b00ba7d214e6
